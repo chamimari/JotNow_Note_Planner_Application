@@ -1,7 +1,11 @@
 # JotNow Note Planner Application
 A note planner application created in Visual Basic with VB.NET, from a Group Project in my Visual Programming class.
 
-JotNow is a planner app, designed to help people keep things in order, or to just note down simple things as well. With a calender and multi-entry system, JotNow strives to help the user record their tasks without being a nusance during their work.
+JotNow is a planner app, designed to help people keep things in order, or to just note down simple things as well. With a calender and multi-entry system, JotNow strives to help the user record their tasks without being a nusance during their work. 
+
+Project is created by me and two other members, whose names I shall not disclose for privacy reasons.
+
+Disclaimer: The content, including all illustrations, renderings, and images presented in this project, is intended for non-profit, educational, and informational purposes only.
 
 <br>
 
@@ -158,5 +162,3 @@ Settings page for users to change or update their email and password. Some other
 An about page pop-up showing a simple introduction on the app’s purpose and also some details including the developers and contact information.
 
 <br>
-
-Disclaimer: The content, including all illustrations, renderings, and images presented in this project, is intended for non-profit, educational, and informational purposes only.

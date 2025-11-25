@@ -111,16 +111,52 @@ This page allows users to manage their existing entries, to either edit or delet
 
 <br>
 
+8.2. Manage Tags
 
+![JotNow Manage Tags](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/ManageTags.png?raw=true "JotNow Manage Tags")
 
+This page allows users to manage their created tags, either create a new one or delete one from an entry.
 
+<br>
 
+8.3. Manage Attachments
 
+![JotNow Manage Attachments](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/ManageAttachments.png?raw=true "JotNow Manage Attachments")
 
+This page allows users to check for attachments they have added to their entries, also allowing them to add more attachments or just removing them.
 
+<br>
 
+8.4.1. Backup and Print
 
+![JotNow Backup and Print](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/BackupandPrint.png?raw=true "JotNow Backup and Print")
 
+Backup will send the backup to the database and prompt user to install a JSON file, with the same file they are able to restore data as well. Next is a print function to allow users to print all existing entries or one selected entry. 
 
+<br>
 
+8.4.2. Print Preview
 
+![JotNow Print Preview](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/PrintPreview.png?raw=true "JotNow Print Preview")
+
+Print Preview output will help list down the entry type, alongside any tags or attachments that are added with the entry.
+
+<br>
+
+9. Settings
+
+![JotNow Settings](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/Settings.png?raw=true "JotNow Settings")
+
+Settings page for users to change or update their email and password. Some other functions including log out and exit button.
+
+<br>
+
+10. About Page
+
+![JotNow About Page](https://github.com/chamimari/JotNow_Note_Planner_Application/blob/main/JotNow_Screenshots/AboutPageCensored.png?raw=true "JotNow About Page")
+
+An about page pop-up showing a simple introduction on the app’s purpose and also some details including the developers and contact information.
+
+<br>
+
+Disclaimer: The content, including all illustrations, renderings, and images presented in this project, is intended for non-profit, educational, and informational purposes only.

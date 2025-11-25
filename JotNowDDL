@@ -1,0 +1,48 @@
+CREATE DATABASE IF NOT EXISTS JotNowDatabase;
+
+Use JotNowDatabase;
+
+-- 1. Users table
+CREATE TABLE Users (
+    userID INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 2. Entries table
+CREATE TABLE Entries (
+    entryID INT AUTO_INCREMENT PRIMARY KEY,
+    userID INT NOT NULL,
+    title VARCHAR(100),
+    content TEXT,
+    entryType ENUM('note', 'journal', 'checklist') NOT NULL,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (userID) REFERENCES Users(userID)
+);
+
+-- 3. Notes table
+CREATE TABLE Notes (
+    noteID INT AUTO_INCREMENT PRIMARY KEY,
+    entryID INT NOT NULL,
+    FOREIGN KEY (entryID) REFERENCES Entries(entryID)
+);
+
+-- 4. Journals table
+CREATE TABLE Journals (
+    journalID INT AUTO_INCREMENT PRIMARY KEY,
+    entryID INT NOT NULL,
+    mood ENUM('happy', 'sad', 'angry', 'excited', 'anxious', 'neutral') NOT NULL,
+    journalDate DATE NOT NULL,
+    FOREIGN KEY (entryID) REFERENCES Entries(entryID)
+);
+
+-- 5. Checklists table
+CREATE TABLE Checklists (
+    checklistID INT AUTO_INCREMENT PRIMARY KEY,
+    entryID INT NOT NULL,
+    FOREIGN KEY (entryID) REFERENCES Entries(entryID)
+);
+
